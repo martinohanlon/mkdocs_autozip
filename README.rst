@@ -12,6 +12,13 @@ We were already using mkdocs to provide a free to access mirror of all our cours
 
 Many of the our images are stored externally, so the plugin also needed the ability to download external images and include them in the zip.
 
+Install
+-------
+
+Install using pip ::
+
+    pip3 install mkdocs-autozip
+
 Usage
 -----
 
