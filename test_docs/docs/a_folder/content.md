@@ -6,7 +6,7 @@ Some content and some images...
 
 ![a duplicate image](https://rpf-futurelearn.s3-eu-west-1.amazonaws.com/Robotics+-+Robot+Buggy/Illustration/40-3_10-Dr_Robot.png)
 
-An image which is in the middle of some content ![an image](images/martin.jpg) and in a folder
+An image which is in the middle of some content ![an image](/images/martin.jpg) and in a folder
 
 ![a duplication image](https://rpf-futurelearn.s3-eu-west-1.amazonaws.com/Robotics+-+Robot+Buggy/Illustration/40-3_10-Dr_Robot.png)
 

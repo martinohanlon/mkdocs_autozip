@@ -1,0 +1,10 @@
+site_name: autozip test site
+
+nav:
+    - Home: 'index.md'
+    - Content: 'a_folder/content.md'
+    - About: 'about.md'
+
+plugins:
+    - search
+    - autozip

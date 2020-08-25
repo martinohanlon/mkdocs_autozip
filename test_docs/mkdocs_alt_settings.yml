@@ -1,0 +1,15 @@
+site_name: autozip test site
+
+nav:
+    - Home: 'index.md'
+    - Content: 'a_folder/content.md'
+    - About: 'about.md'
+
+plugins:
+    - search
+    - autozip:
+        source_zip_dir: download
+        source_zip_file_name: my_source.zip
+        download_images: true
+        download_image_zip_dir: downloaded_images
+        verbose: true

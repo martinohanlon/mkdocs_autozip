@@ -19,8 +19,7 @@ class AutoZipPlugin(mkdocs.plugins.BasePlugin):
     )
 
     def on_config(self, config, **kwargs):
-        print(self.config)
-        # self._source_files = []
+        # print(self.config)
         self._source_files = {}
         
         # set source zip filename
@@ -52,9 +51,6 @@ class AutoZipPlugin(mkdocs.plugins.BasePlugin):
 
     def on_page_markdown(self, markdown, page, config, files):
 
-        # print(markdown)
-        # print(config)
-
         # source markdown files
         self._source_files[page.file.src_path] = page.file.abs_src_path
 
@@ -74,15 +70,7 @@ class AutoZipPlugin(mkdocs.plugins.BasePlugin):
             else:
                 if config['download_images']:
                     self._source_files[os.path.join(config['download_image_zip_dir'], self._url_to_filename(url))] = url
-                
-    # def on_post_page(self, output, page, config):
-    #     self._source_files.append(page.file)
-        
-    #     # print(page.file.abs_src_path)
-    #     # print(page.file.src_path)
-    #     # print(page.file.abs_dest_path)
-    #     # print(page.file.dest_path)
-
+            
     def on_post_build(self, config):
 
         # print(config)
