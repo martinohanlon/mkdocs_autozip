@@ -53,7 +53,7 @@ e.g. ::
         download_image_zip_dir: downloaded_images
         verbose: true
 
-Be careful with the spacing of the options. mkdocs is very particular. There must be 4 spaces before the name of the option. e.g.
+Be careful with the spacing of the options. mkdocs is very particular. There must be 4 spaces before the name of the option. e.g. ::
 
     - autozip:
         source_zip_dir: download
