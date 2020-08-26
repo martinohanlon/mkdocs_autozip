@@ -40,7 +40,7 @@ You can change the configuration of the plugin by using the following options in
 
 + `source_zip_dir` will set the directory of the source zip file 
 + `source_zip_file_name` will set the name of the file
-+ setting `download_image` to `true` will cause images to be downloaded and saves to `/images` in the zip file
++ setting `download_images` to `true` will cause images to be downloaded and saves to `/images` in the zip file
 + `download_image_zip_dir` will change the name of the directory where images are downloaded
 + setting `verbose` to `true` will output  more information during the source zip build
 
