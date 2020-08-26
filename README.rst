@@ -6,11 +6,11 @@ An mkdocs plugin to automatically zip the source files as part of the build proc
 Background
 ----------
 
-As part of my work on online courses for the Raspberry Pi foundation, I wanted to give people access to download a complete zip of the source code which made up our online courses.
+As part of my work on online courses for the Raspberry Pi foundation, I wanted to give people access to download a complete zip of the source content which made up our online courses.
 
-We were already using mkdocs to provide a free to access mirror of all our course content, so I decided to create a plugin to automatically zip all the source files used in creating the build.
+We were already using mkdocs to provide a, free to access, mirror of all our course content, so I decided to create a plugin to automatically zip all the source files used in creating the site.
 
-Many of the our images are stored externally, so the plugin also needed the ability to download external images and include them in the zip.
+Many of the images used in the content are hosted externally, so the plugin also needed the ability to download external images and include them in the zip.
 
 Install
 -------
@@ -22,7 +22,7 @@ Install using pip ::
 Usage
 -----
 
-Add the plugin into your `mkdocs.yml` file ::
+Add the plugin into your `mkdocs.yml` file e.g. ::
 
     plugins:
         - search
@@ -34,7 +34,7 @@ By default the source zip file will:
 
 + be created in the root of the website 
 + with the filename `source.zip`
-+ externally hosted images will not be included, but local images will
++ local images will be include but externally hosted images will not
 
 You can change the configuration of the plugin by using the following options in mkdocs.yml:
 
@@ -55,12 +55,10 @@ e.g. ::
 
 Be careful with the spacing of the options. mkdocs is very particular. There must be 4 spaces before the name of the option. e.g.
 
-This is fine ::
-
     - autozip:
         source_zip_dir: download
 
-This is not fine ::
+not ::
 
     - autozip:
       source_zip_dir: download
