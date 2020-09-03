@@ -10,6 +10,8 @@ plugins:
     - autozip:
         source_zip_dir: download
         source_zip_file_name: my_source.zip
+        add_source_zip_to_nav: false
+        source_zip_nav_description: download the source for this site as a zip
         download_images: true
         download_image_zip_dir: downloaded_images
         verbose: true

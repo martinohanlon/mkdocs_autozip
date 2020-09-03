@@ -11,7 +11,7 @@ else:
 
 __project__ = "mkdocs_autozip"
 __package__ = "mkdocs_autozip"
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 __author__ = "Martin O'Hanlon"
 __desc__ = 'A mkdocs plugin for zipping source files during build.'
 __author_email__ = 'martin.ohanlon@raspberrypi.org'
@@ -24,8 +24,7 @@ __keywords__ = [
 ]
 
 __classifiers__ = [
-   "Development Status :: 3 - Alpha",
-#   "Development Status :: 4 - Beta",
+   "Development Status :: 4 - Beta",
 #    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Topic :: Education",
