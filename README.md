@@ -83,6 +83,10 @@ Beta. Tested on a few sites, but you many experience problems. If you find an is
 
 ## Change history
 
+### v0.2.0 - 2020-11-04
+
++ fixed bug where URLs containing parenthesis in markdown images would cause image downloads to fail 
+
 ### v0.1.0 - 2020-09-02
 
 + added the functionality to include a link to the source zip in the navigation

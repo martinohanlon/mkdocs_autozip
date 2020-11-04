@@ -56,8 +56,8 @@ class AutoZipPlugin(mkdocs.plugins.BasePlugin):
         # source markdown file
         self._source_files[page.file.src_path] = page.file.abs_src_path
 
-        # find source images
-        pattern = re.compile(r'!\[(.*?)\]\((.*?)\)', flags=re.IGNORECASE)
+        # find source images        
+        pattern = re.compile(r'!\[(.*)\]\((.+)\)', flags=re.IGNORECASE)
         matches = pattern.findall(markdown)
         for match in matches:
 
