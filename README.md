@@ -83,6 +83,11 @@ Beta. Tested on a few sites, but you many experience problems. If you find an is
 
 ## Change history
 
+### v0.2.1 - 2022-10-05
+
++ updates to resolve Python 3.10 compatibility issues
++ resolve regex depreciated warning
+
 ### v0.2.0 - 2020-11-04
 
 + fixed bug where URLs containing parenthesis in markdown images would cause image downloads to fail 
