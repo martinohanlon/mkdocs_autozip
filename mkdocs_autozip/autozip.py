@@ -2,6 +2,7 @@ import mkdocs
 import os
 import re
 import urllib
+import urllib.request
 import unicodedata
 
 from zipfile import ZipFile
@@ -149,8 +150,8 @@ class AutoZipPlugin(mkdocs.plugins.BasePlugin):
         """
         
         filename = unicodedata.normalize("NFKD", url)
-        filename = re.sub('[^\w\s-]', '', filename).strip().lower()
-        filename = re.sub('[-\s]+', '-', filename)
+        filename = re.sub(r'[^\w\s-]', '', filename).strip().lower()
+        filename = re.sub(r'[-\s]+', '-', filename)
         
         parsed_url = urllib.parse.urlparse(url)
 
